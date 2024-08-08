@@ -1,0 +1,13 @@
+{% extends 'app/base/base.html' %}
+
+{% block title %}Авторизация{% endblock title %}
+
+
+{% block main %}
+    <form action="" method="post">
+        {{ signInForm }}
+        {% csrf_token %}
+        <button type="submit">Войти</button>
+    </form>
+
+{% endblock main %}
